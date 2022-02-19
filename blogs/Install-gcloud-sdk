@@ -1,0 +1,21 @@
+# Install-gcloud-sdk
+
+https://cloud.google.com/sdk/docs/quickstart
+
+
+## Install on Mac
+
+```
+curl https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-371.0.0-darwin-x86_64.tar.gz -o gcloud-sdk.tar.gz
+tar -xf gcloud-sdk.tar.gz
+./google-cloud-sdk/install.sh
+source ~/.bash_profile 
+```
+
+### Setup & Configure the gcloud project 
+
+`gcloud init`
+
+### If you have service account with access key created then you can also use 
+
+`gcloud auth activate-service-account <client_email-given-inside-keyfile> --key-file=<location-of-key-file>.json`
